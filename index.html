@@ -1,297 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Steller landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Sakshi Shrestha</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="assets/css/steller.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-        <div class="container">
-            <!-- <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt="">SS</a> -->
-            <a class="navbar-brand" href="#" style="color: #ff7a57; font-family: Brush Script MT, Brush Script Std, cursive; font-size: 24px;">Sakshi Shrestha</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SakshiShrestha</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/woman.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/sakshistha.png" alt="Sakshi Shrestha">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sakshi Shrestha">Sakshi Shrestha</h1>
+
+          <p class="title">Software Developer</p>
+          <br>
+          <a href="./assets/Resume_SakshiShrestha_1.pdf" target="_blank" class="title" download rel="noreferrer">Download Resume</a>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sakshishrestha111@gmail.com" class="contact-link">sakshishrestha111</br>@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/sakshishrestha" class="contact-link" target="_blank">
+              sakshi-shrestha
+            </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">linkedin</p>
+
+              <a href="https://www.linkedin.com/in/sakshi-shrestha-a29a06146/" class="contact-link" target="_blank">
+              sakshi-shrestha
+            </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Johnson City, Tennessee, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/sakshishrestha" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sakshi-shrestha-a29a06146/" class="social-link" target="_blank"> 
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/sakshi.art.gallery?igshid=ZDdkNTZiNTM=" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A versatile full-stack developer with a strong interest in both design and development, dedicated to building responsive, user-focused applications that are both technically sound and visually engaging.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="20">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Delivering high-quality, professional websites tailored for performance and usability.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="20">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Creating cutting-edge, visually engaging web designs with a professional touch.
+                </p>
+              </div>
+
+            </li><li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="20">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic design</h4>
+
+                <p class="service-item-text">
+                  Producing modern, visually striking graphic designs at a premium quality level.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+        <!--
+          - Tech Stack
+        -->
+        <section class="testimonials">
+
+          <!-- <h3 class="testimonials-title">Skills</h3> -->
+
+          <ul class="testimonials-list">
+            <li class="testimonials-item">
+
+              <div class=".testimonials-avatar-box">
+                <img src="./assets/images/icon-quote.svg" alt="camera icon" width="20">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 .testimonials-item-title">Tech Stack</h4>
+                <p class="testimonials-text">
+                  <b style="font-weight: bold;">Languages:</b> C#, Python, PHP, Javascript, C++, C
+                </p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Frameworks:</b> WordPress, Laravel, Blazor, React JS, Angular, Pandas, NumPy</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Design Tools:</b> Adobe XD(Photoshop, Illustrator, InDesign, XD), Figma, Sketch</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Operating Systems:</b> Windows, Linux</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Cloud & DevOps:</b> AWS(S3, EC2, Lambda), Azure, Docker, Kubernetes, CI/CD (Github Actions, Jenkins)</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Databases:</b> MySQL, MongoDB, PostgreSQL</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Other Skills:</b> RESTful APIs, Git, Agile/Scrum, UI/UX Design, Data Visualization, Web Accessibility</p>
+               
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/documents/SakshiShrestha_resume.pdf">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End of page navibation -->
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="40" data-modal-img>
+              </figure>
 
-    <!-- Page Header -->
-    <header class="header" id="home">
-        <div class="container">
-            <div class="infos">
-                <h6 class="subtitle">Hello,I'm</h6>
-                <h6 class="title">Sakshi Shrestha</h6>
-                <p>UI/UX Designer & Software Developer</p>
-
-                <div class="buttons pt-3">
-                    <button class="btn btn-dark rounded"><a href="assets/documents/SakshiShrestha_resume.pdf"><span style="color:#fff;">Resume</span> </a></button>
-                </div>
-
-                <div class="socials mt-4">
-                    <a class="social-item" href="https://www.linkedin.com/in/sakshi-shrestha-a29a06146/"><i class="ti-linkedin"></i></a>
-                    <a class="social-item" href="https://github.com/sakshishrestha"><i class="ti-github"></i></a>
-                    <a class="social-item" href="https://instagram.com/sakshi.art.gallery?igshid=ZDdkNTZiNTM="><i class="ti-instagram"></i></a>
-                </div>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-            <div class="img-holder">
-                <img src="assets/imgs/man.svg" alt="">
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2021-06-14"></time>
+
+              <div data-modal-text>
+                <p>
+                  
+                </p>
+              </div>
+
             </div>
+
+          </section>
+
         </div>
 
-    </header>
-    <!-- End of Page Header -->
+        
+      </article>
 
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/sakshi1.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Sakshi Shrestha</h6>
-                    <p class="subtitle">UI/UX Designer</p>
-                    <p>Hi, I am Sakshi Shrestha born and brought up in Kathmandu, Nepal. <br>Being a Computer Science graduate from Kathmandu University, <br>I am proficient in my field with my terms and interest.</p>
-                    <p>Check Out my CV to get more on my professional experiences.</p>
-                    <button class="btn btn-primary rounded mt-3"><a href="assets/documents/SakshiShrestha_resume.pdf"><span style="color: #ffffff; text-decoration: none;">Click Resume</span></a></button>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!--
+        - #RESUME
+      -->
 
-    <!-- Service section -->
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Service</h6>
-            <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">Work on the Web Development, UI/UX <br> Graphics Designing.</p>
+      <article class="resume" data-page="resume">
 
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-crown"></i>
-                            <h5>UI/UX Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Web Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-mobile"></i>
-                            <h5>App Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-bar-chart"></i>
-                            <h5>Graphic Designing</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
 
-    <!-- Skills section -->
-    <section class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Why Choose me</h6>
-            <p class="mb-5 pb-4">Kindful with Generosity <br> Hardworking and Dedicated.</p>
+        <section class="timeline">
 
-            <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Photoshop</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Web Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">App Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Figma</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Skills sections -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-            <p class="mb-5 pb-4">Find Some Sample of my Graphics Design and Art Works <br>Creative and Joyful.</p>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/kumari.JPEG" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Freelance Sketcher</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://instagram.com/sakshi.art.gallery?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/nature.JPEG" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Freelance Sketcher</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://instagram.com/sakshi.art.gallery?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/clean_code.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>IT Meet 2018</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://kucc.ku.edu.np/itmeet/"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/AUF.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Asian University Forum</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://en.snu.ac.kr/snunow/snu_media/news?md=v&bbsidx=125209"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/img.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Covid Nepal</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://thiscovidnepal.onrender.com/"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/fifa_competition.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>IT Meet 2018</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://kucc.ku.edu.np/itmeet/"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/shiva.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Freelance Sketcher</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://instagram.com/sakshi.art.gallery?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-        </div>
-    </section>
-    <!-- End of portfolio section -->
+            <h3 class="h3">Education</h3>
+          </div>
 
-    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="/" target="_blank">SakshiShrestha</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="https://www.linkedin.com/in/sakshi-shrestha-a29a06146/"><i class="ti-linkedin"></i></a>
-                        <a class="social-item" href="https://github.com/sakshishrestha"><i class="ti-github"></i></a>
-                        <a class="social-item" href="https://instagram.com/sakshi.art.gallery?igshid=ZDdkNTZiNTM="><i class="ti-instagram"></i></a>
-                        <!-- <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a> -->
-                    </div>
-                </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">East Tennessee State University</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                Master's Degree in Computer Science <br>
+                GPA : 3.945
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kathmandu University</h4>
+
+              <span>2015 — 2019</span>
+
+              <p class="timeline-text">
+                Bachelor's Degree in Computer Science <br>
+                GPA : 3.32
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-        </div>
-    </footer>
-    <!-- End of page footer -->
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+            <h3 class="h3">Experience</h3>
+          </div>
 
-    <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">International Storytelling Center - Part of Capstone Project</h4>
+
+              <span>Jan 2024 — May 2025</span>
+
+              <p class="timeline-text">
+                ● Migrated and redeveloped the website from WordPress to a modern C#/Blazor architecture, designing intuitive UIs to improve user experience and integrating a responsive frontend with a robust Blazor Server backend.
+                <br>● Built and deployed a backend administrative portal to streamline data management; implemented REST APIs for audio uploads, transcription handling, and data retrieval.
+                <br>● Developed a microservice in Python using the MinIO SDK for automating audio-to-text transcription, integrating the pipeline seamlessly with the Blazor frontend.
+                <br>● Led the Docker-based deployment of services on a VM server, configuring AWS S3 and MinIO for scalable object storage and applying CI/CD practices via GitHub Actions for automated builds and testing.
+                <br>● Managed a team of four, delegating tasks, conducting peer reviews, and driving efficient workflows through Agile sprint cycles and collaborative development practices.
+                <br>● Led regular meetings with clients and advisors to maintain project alignment, clarify requirements, and ensure delivery of high-quality, user-focused solutions.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant (Data Analysis and Visualization) </h4>
+
+              <span>May 2024 — May 2025</span>
+
+              <p class="timeline-text">
+                ● Analyzed and visualized large datasets using SPSS to identify data trends and frequencies
+                <br>● Generated comprehensive reports for each research survey, ensuring accurate data representation
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vanilla Transtechnor - Software Developer</h4>
+
+              <span>August 2021 — April 2023</span>
+
+              <p class="timeline-text">
+                ● Lead - Developed and deployed WordPress-based websites on cloud servers to enhance scalability and performance
+                <br>● Developed a Learning Management System (LMS) using Moodle to improve their educational platform
+                <br>● Organized and tracked software development issues and QA results for the Remittance project
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Eight Square Pvt.Ltd - Jr. Software Developer </h4>
+
+              <span>December 2018 — August 2021</span>
+
+              <p class="timeline-text">
+                ● Lead - Designed and developed a corporate website with responsive layouts, achieving cross-device compatibility
+                <br>● Built visually appealing UI and functional interfaces using HTML5, CSS, and SASS for multiple website projects
+                <br>● Supported a fitness app project backend with feature designs tailored for elderly users
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance Developer - UI/UX Developer </h4>
+
+              <span>March 2019 — August 2021</span>
+
+              <p class="timeline-text">
+                ● Designed and Developed (UI/UX) of the Covid19 Nepal Project - https://thiscovidnepal.onrender.com/
+                <br>● Produced cross-media designs for digital and print formats, ensuring consistency and impact for various events
+                <br>● Designed Website skeleton(UI/UX) for award-winning projects for MIT/GSL, focusing on UX/Design Principles
+                <br>● Collaborated with open-source communities to contribute creative and technical solutions
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Graphic Design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Graphic Design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/sakshishrestha/covid19-angular" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="covid_19" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Covid-19 Nepal Visualisation</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/sakshishrestha/Opus" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="opus nepal" loading="lazy" style="width: 100%;"> 
+                </figure>
+
+                <h3 class="project-title">OPUS Nepal</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+      
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.figma.com/design/VUFoE4HJgU6cx9jGXiBgKs/LewerMark-Insurance-Design?node-id=0-1&p=f&t=TVP0JyHShLi6t4In-0" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Insurance Company" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Insurance Company Demo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.figma.com/design/NQUAM75nhxdxuIuwjDjlgW/Artsy-Ecom-Design?node-id=0-1&p=f&t=HIZIAyrPDiSqI6Ii-0" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="artsy" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Art Ecommerce Web flow</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/sakshishrestha/ILLMSProject" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="illms" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Inter-Library Loan Management system</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/sakshishrestha/EIsystem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="EIsystem" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Expense and Income Management System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.figma.com/design/UnoY3v5lUjxr6n6q1e4RCG/ILLMS-Prototype?node-id=0-1&p=f&t=Q6c41KZLWptl0flA-0" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="illms" loading="lazy" style="width: 100%;">
+                </figure>
+
+                <h3 class="project-title">Inter-Library Loan Management system Design</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="graphic design">
+              <a target="_blank">
+
+                <figure class="project-img">
+                  <!-- <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div> -->
+
+                  <img src="./assets/images/AUF.jpg" alt="gd-1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Asian University Forum - Certificate Design</h3>
+
+                <p class="project-category">Graphic Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphic design">
+              <a target="_blank">
+
+                <figure class="project-img">
+                  <!-- <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div> -->
+
+                  <img src="./assets/images/clean_code.jpg" alt="gd-1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Banner Design - CleanCode</h3>
+
+                <p class="project-category">Graphic Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphic design">
+              <a target="_blank">
+
+                <figure class="project-img">
+                  <!-- <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div> -->
+
+                  <img src="./assets/images/fifa_competition.jpg" alt="gd-1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Banner Design - CleanCode</h3>
+
+                <p class="project-category">Graphic Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphic design">
+              <a target="_blank">
+
+                <figure class="project-img">
+                  <!-- <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div> -->
+
+                  <img src="./assets/images/img.png" alt="gd-1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Image Design</h3>
+
+                <p class="project-category">Graphic Design</p>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
