@@ -42,20 +42,31 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/sakshistha.png" alt="Sakshi Shrestha">
+          <img src="./assets/images/sakshistha.png" alt="Sakshi Shrestha" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Sakshi Shrestha">Sakshi Shrestha</h1>
+          <h1 class="name" title="Sakshi Shrestha" style="margin-bottom: 8px;">Sakshi Shrestha</h1>
 
-          <p class="title">Software Developer</p>
-          <br>
-          <a href="./assets/Resume_SakshiShrestha_1.pdf" target="_blank" class="title" download rel="noreferrer">Download Resume</a>
+          <p class="title" style="background: var(--onyx); color: var(--orange-yellow-crayola); width: max-content; padding: 3px 12px; border-radius: 8px; font-size: 12px; margin: 0 auto 12px auto;">
+            Software Developer
+          </p>
+
+          <a href="mailto:sakshishrestha111@gmail.com" class="contact-link" style="font-size: 13px; color: var(--light-gray); text-decoration: none; transition: color 0.3s ease;">
+            sakshishrestha111@gmail.com
+          </a>
+
+          <div style="margin-top: 20px;">
+            <a href="./assets/Resume_SakshiShrestha_1.pdf" target="_blank" download rel="noreferrer" 
+              style="background: var(--border-gradient-onyx); color: var(--white-2); font-size: 12px; padding: 8px 16px; border-radius: 12px; border: 1px solid var(--jet); text-decoration: none; box-shadow: var(--shadow-2); display: inline-block;">
+              <ion-icon name="download-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+              Download Resume
+            </a>
+          </div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -67,7 +78,7 @@
 
         <ul class="contacts-list">
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -79,7 +90,7 @@
               <a href="mailto:sakshishrestha111@gmail.com" class="contact-link">sakshishrestha111</br>@gmail.com</a>
             </div>
 
-          </li>
+          </li> -->
 
           <li class="contact-item">
 
@@ -107,6 +118,22 @@
               <p class="contact-title">linkedin</p>
 
               <a href="https://www.linkedin.com/in/sakshi-shrestha-a29a06146/" class="contact-link" target="_blank">
+              sakshi-shrestha
+            </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Google Scholar</p>
+
+              <a href="https://scholar.google.com/citations?user=JM0NYm4AAAAJ&hl=en&oi=ao" class="contact-link" target="_blank">
               sakshi-shrestha
             </a>
             </div>
@@ -146,6 +173,18 @@
           </li>
 
           <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=JM0NYm4AAAAJ&hl=en&oi=ao" class="social-link" target="_blank" title="Google Scholar">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.researchgate.net/profile/Sakshi-Shrestha" class="social-link" target="_blank" title="ResearchGate">
+              <ion-icon name="library-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
             <a href="https://instagram.com/sakshi.art.gallery?igshid=ZDdkNTZiNTM=" class="social-link" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
@@ -178,7 +217,9 @@
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
-
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Academics</button>
+          </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
@@ -207,11 +248,15 @@
 
         <section class="about-text">
           <p>
-            A versatile full-stack developer with a strong interest in both design and development, dedicated to building responsive, user-focused applications that are both technically sound and visually engaging.
-          </p>
+              Versatile full-stack developer and researcher dedicated to building technically sound, user-focused applications. 
+              By bridging the gap between design and development, I create responsive digital solutions that are both functional and visually engaging.
+            </p>
+
+            <p>
+              My work is informed by a deep commitment to academic research in AI and Machine Learning, specifically within healthcare and software security.   
+            </p>
 
         </section>
-
 
         <!--
           - service
@@ -234,6 +279,22 @@
 
                 <p class="service-item-text">
                   Delivering high-quality, professional websites tailored for performance and usability.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="research icon" width="20">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis & ML Research</h4>
+
+                <p class="service-item-text">
+                  Data-driven AI solutions for healthcare and software security, using predictive modeling to turn complex data into clear, actionable insights.
                 </p>
               </div>
 
@@ -296,8 +357,8 @@
                 <p class="testimonials-text"><b style="font-weight: bold;">Frameworks:</b> WordPress, Laravel, Blazor, React JS, Angular, Pandas, NumPy</p>
                 <p class="testimonials-text"><b style="font-weight: bold;">Design Tools:</b> Adobe XD(Photoshop, Illustrator, InDesign, XD), Figma, Sketch</p>
                 <p class="testimonials-text"><b style="font-weight: bold;">Operating Systems:</b> Windows, Linux</p>
-                <p class="testimonials-text"><b style="font-weight: bold;">Cloud & DevOps:</b> AWS(S3, EC2, Lambda), Azure, Docker, Kubernetes, CI/CD (Github Actions, Jenkins)</p>
-                <p class="testimonials-text"><b style="font-weight: bold;">Databases:</b> MySQL, MongoDB, PostgreSQL</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Cloud & DevOps:</b> AWS(S3, EC2, Lambda), Azure, Docker, Kubernetes, CI/CD (Github Actions)</p>
+                <p class="testimonials-text"><b style="font-weight: bold;">Databases:</b> MySQL, PostgreSQL, MongoDB </p>
                 <p class="testimonials-text"><b style="font-weight: bold;">Other Skills:</b> RESTful APIs, Git, Agile/Scrum, UI/UX Design, Data Visualization, Web Accessibility</p>
                
               </div>
@@ -350,6 +411,87 @@
         
       </article>
 
+
+      <article class="academics" data-page="academics">
+
+        <header>
+          <h2 class="h2 article-title">Academics & Research</h2>
+        </header>
+
+        <section class="about-text">
+          <h3 class="h3 service-title">Research Interests</h3>
+          <p>
+            My primary research interests include <strong>Machine Learning, Artificial Intelligence, Computer Vision, Medical Imaging,</strong> and <strong>Bioinformatics.</strong> 
+            I am also focused on Human-Centered and Data-Driven Computing, specifically applying Deep Learning and Statistical Modeling to software security and healthcare.
+          </p>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="journal-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Attack Surface Score for Software Systems</h4>
+              <span>2025 — Future Internet, 17(305)</span>
+              <p class="timeline-text">
+                Rajbhandari, Y.; Maharjan, R.; <strong>Shrestha, S.</strong>; Cerny, T.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Initial Review: Simplifying Attack Surface Scoring for Software Systems</h4>
+              <span>2025 — IEEE SOSE</span>
+              <p class="timeline-text">
+                Rajbhandari, Y.; Maharjan, R.; <strong>Shrestha, S.</strong>; Cerny, T.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">A Case Study on Monolith to Microservices Decomposition with Variational Autoencoder-Based Graph Neural Network</h4>
+              <span>2025 — Future Internet, 17(303)</span>
+              <p class="timeline-text">
+                Maharjan, R.; Sooksatra, K.; Cerny, T.; Rajbhandari, Y.; <strong>Shrestha, S.</strong>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Benchmarking Motif Discovery Algorithms</h4>
+              <span>2025 — ISNCC</span>
+              <p class="timeline-text">
+                Rajbhandari, Y.; <strong>Shrestha, S.</strong>; Maharjan, R.; Shaik, S.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">An Explainable End-to-End Artificial Intelligence Framework for
+                      Lumbar Spondylolisthesis Diagnosis from Radiography Images Using
+                      Anatomical Feature Engineering</h4>
+              <span>Under Review — MetaRadiology</span>
+              <p class="timeline-text">
+                <strong>Shrestha, S.</strong>; Saechueng S; et al.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MARVEL: Machine Learning–based Voice Evaluation Framework</h4>
+              <span>Under Review — The Voice Foundation</span>
+              <p class="timeline-text">
+                Prajapati, M.; Ghimire, P.; <strong>Shrestha, S.</strong>; et al.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+      </article>
+
+
       <!--
         - #RESUME
       -->
@@ -380,7 +522,7 @@
 
               <p class="timeline-text">
                 Master's Degree in Computer Science <br>
-                GPA : 3.945
+                Honors: Research Assistant(Data Analysis and Visualisation)
               </p>
 
             </li>
@@ -393,7 +535,6 @@
 
               <p class="timeline-text">
                 Bachelor's Degree in Computer Science <br>
-                GPA : 3.32
               </p>
 
             </li>
@@ -412,6 +553,17 @@
           </div>
 
           <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ETSU, Dept. of Engineering, Engineering Technology, Interior Architecture and Surveying</h4>
+              <span>Oct 2025 — Present</span>
+              <p class="timeline-text">
+                <strong>Application Developer</strong>
+                <br>● Building a full-stack road construction cost-estimation platform using .NET Blazor, Python, and PostgreSQL. 
+                <br>● Implemented RBAC security using BCrypt hashing and custom AuthenticationStateProviders for secure session management.
+                <br>● Optimized database integrity via EF Core relational modeling, automated auditing, and PostgreSQL indexing.
+              </p>
+            </li>
 
             <li class="timeline-item">
 
@@ -782,3 +934,4 @@
 </body>
 
 </html>
+
